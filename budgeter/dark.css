@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #001524;
+    color: #D9E8DC;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #D9E8DC;
+    margin-bottom: 1rem;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    flex: 1 1 calc(50% - 1rem);
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #273F3E;
+    color: #D9E8DC;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #561D25;
+    color: #D9E8DC;
+  }
+  
+  button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+  }
+  
+  table th, table td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #202716;
+  }
+  
+  th {
+    background-color: hsl(210, 16%, 93%);
+    color: #495057;
+  }
+  
+  /* Chart Container */
+  .chart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  canvas {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    height: auto;
+  }
+  
+  /* Save/Load Buttons */
+  #export-button, #import-button {
+    margin-right: 0.5rem;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    form {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    input[type="text"],
+    input[type="number"] {
+      flex: 1 1 100%;
+    }
+  
+    button {
+      width: 100%;
+    }
+  
+    .chart-container {
+      gap: 2rem;
+    }
+  }
+  

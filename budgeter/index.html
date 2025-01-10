@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Calculator</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="header">
+    <a href="dark.html"><img src="src/Night.png" alt=""></a>
+    <h1>Financial Budget Calculator</h1></span>
+  </div>
+  <form id="budget-form">
+    <div class="form-group">
+      <label for="total-budget">Total Budget ($):</label>
+      <input type="number" id="total-budget" required>
+    </div>
+    <div class="form-group">
+      <label for="category">Category:</label>
+      <input type="text" id="category" required>
+    </div>
+    <div class="form-group">
+      <label for="percentage">Percentage (%):</label>
+      <input type="number" id="percentage" min="0" max="100" required>
+    </div>
+    <button type="button" id="add-button">Add to Budget</button>
+  </form>
+
+  <table id="budget-table">
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Percentage (%)</th>
+        <th>Amount ($)</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div id="chart-container">
+    <canvas id="barChart"></canvas>
+    <canvas id="pieChart"></canvas>
+  </div>
+
+  <button id="export-button">Save Data to File</button>
+  <button id="import-button">Load Data from File</button>
+  <a href="dark.html"><button>Dark Mode</button></a> 
+  <input type="file" id="file-input" style="display: none;">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
