@@ -22,16 +22,16 @@
     </div>
   </header>
 
-  <section id="home" class="section">
+  <section id="home" class="section" data-aos="zoom-in">
     <div class="container center">
-      <img src="src/profile.jpg" alt="My profile Photo" class="profile-pic">
+      <img src="src/profile.jpg" alt="Your Photo" class="profile-pic">
       <h2>Hello, I'm <span class="highlight">ADEDIRE Victoria</span></h2>
       <p>A passionate Web Developer</p>
     </div>
   </section>
   
 
-  <section id="about" class="section light">
+  <section id="about" class="section light" data-aos="fade-up">
     <div class="container">
       <h2>About Me</h2>
       <p>
@@ -50,7 +50,7 @@
         I'm passionate about continuous learning, and I enjoy solving problems through clean, efficient code. I aim to build digital experiences that are both visually appealing and functionally robust.
       </p>
       <div class="profile-links">
-        <a href="https://github.com/riksee" target="_blank">GitHub</a>
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
         <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
         <a href="mailto:youremail@example.com">Email Me</a>
         <!-- Optional CV download -->
@@ -60,25 +60,27 @@
   </section>
   
 
-  <section id="projects" class="section">
+  <section id="projects" class="section" data-aos="fade-up">
     <div class="container">
       <h2>Projects</h2>
       <div class="projects-grid">
         <div class="project">
           <img src="src/tbpage.png" alt="Project 1">
-          <h3>Project Title 1</h3>
-          <p>Short description of your project goes here.</p>
+          <h3>TechBankk Website</h3>
+          <p>The TechBankk website is a professional, sleek, black-themed web application designed to showcase the company's services and offerings. It features modern animations, such as sliding testimonials, to enhance user interaction and engagement. The website also integrates visually appealing images for better presentation and user experience. It is built with responsive design principles, ensuring it looks great on all devices while maintaining a professional and clean aesthetic.
+          </p>
         </div>
         <div class="project">
-          <img src="src/cooking-love.png.jpg" alt="Project 2">
-          <h3>Project Title 2</h3>
-          <p>Another brief project overview.</p>
+          <img src="src/cooking-love.png" alt="Project 2">
+          <h3>Cooking Love Recipe Page</h3>
+          <p>The Cooking Love website is a beautifully designed platform for food enthusiasts, featuring a wide variety of recipes. It boasts an elegant color palette, with darker tones accented by vibrant hues to create a visually appealing and modern look. The site includes detailed recipe pages with step-by-step instructions, nutrition facts, and vivid images to help users easily follow along. Built with HTML, Tailwind CSS, and JavaScript for the frontend, and Node.js for the backend, the website is responsive, user-friendly, and optimized for an enjoyable cooking experience.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="skills" class="section light">
+  <section id="skills" class="section light" data-aos="fade-up">
     <div class="container">
       <h2>Skills</h2>
       <ul class="skills">
@@ -91,7 +93,7 @@
     </div>
   </section>
 
-  <section id="contact" class="section">
+  <section id="contact" class="section" data-aos="fade-up">
     <div class="container">
       <h2>Contact Me</h2>
       <form>
@@ -113,5 +115,11 @@
       <p>&copy; 2025 Your Name. All rights reserved.</p>
     </div>
   </footer>  
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000
+    });
+  </script>
 </body>
 </html>
