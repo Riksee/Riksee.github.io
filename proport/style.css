@@ -1,0 +1,150 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    color: #111;
+  }
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  header {
+    background: #111;
+    color: #fff;
+    padding: 20px 0;
+  }
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  nav ul li a.active,
+  nav ul li a:hover {
+    color: #00bcd4;
+  }
+  
+  .section {
+    padding: 60px 0;
+  }
+  .section.light {
+    background: #f4f4f4;
+  }
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .project {
+    flex: 1 1 calc(50% - 20px);
+    background: #eee;
+    padding: 10px;
+  }
+  .project img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background: #ccc;
+  }
+  .skills {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  .skills li {
+    padding: 10px 15px;
+    background: #111;
+    color: #fff;
+    border-radius: 5px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  button {
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #0097a7;
+  }
+  footer {
+    background: #111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-links {
+    margin-bottom: 10px;
+  }
+  .footer-links a {
+    color: #00bcd4;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: opacity 0.3s;
+  }
+  .footer-links a:hover {
+    opacity: 0.8;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  .highlight {
+    color: #00bcd4;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #00bcd4;
+  }
+  .profile-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .profile-links a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border 0.3s ease;
+  }
+  .profile-links a:hover {
+    border-bottom: 2px solid #00bcd4;
+  }
+    
